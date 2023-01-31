@@ -24,12 +24,12 @@
         font-weight: 700;
 }
 
+
 /* Background Gradient */
     
 body {
     width: auto;
-
-    background: linear-gradient(180deg, #00425B 1.04%, rgba(0, 66, 91, 0.83) 45.83%, rgba(0, 66, 91, 0) 100%);
+    background: linear-gradient(180deg, #00425B 1.04%, rgba(0, 66, 91, 0.83) 10.83%, rgba(0, 66, 91, 0) 60%);
     background-repeat: no-repeat;
 }
 
@@ -135,7 +135,7 @@ h1 {
 /* H2 */
 
 h2 {
-    z-index: 3;
+    z-index: 6;
     font-family: 'Dinosaur Cake DEMO';
     font-style: normal;
     font-weight: 400;
@@ -178,7 +178,7 @@ h4 {
 p {
     font-family: 'Satoshi';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 32px;
     color: #FFFFFF;
     max-width: 728px;
@@ -189,7 +189,7 @@ p {
 
 .hero {
     position: relative;
-    width: 90%;
+    width: 80%;
     margin-top: 200px;
     margin-left: 100px;
 }
@@ -251,7 +251,7 @@ p {
   height: 900px;
   left: 565px;
   top: 10px;
-  z-index: 2;
+  z-index: 0;
 }
 
 /* Gradient Hero */
@@ -289,7 +289,6 @@ filter: drop-shadow(-3px -1px 9px rgba(0, 66, 91, 0.2));
   position: relative;
   width: 100%;
   height: 251px;
-  top: 5782px;
 }
 
 .flex-container {
@@ -409,23 +408,155 @@ filter: drop-shadow(-3px -1px 9px rgba(0, 66, 91, 0.2));
 
 #skills {
     z-index: 3;
-    padding-top: 100px;
-    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 0px;
     text-align: center;
 }
 
+#tool-kit {
+    z-index: 3;
+    padding-top: 100px;
+    margin-top: 100px;
+    text-align: center;
+    color: #00425B;
+}
 .flex-skills {
-    @media (min-width: 56.25em){
-      display: flex;  
 
+    display: flex;  
+    justify-content: center;
     }
-  }
+
 .main-content {
     flex: 1; 
-    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   
-  .analytical {
+.analytical {
     flex: 1;
-    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
+
+.icons {
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 0px !important;
+    margin-bottom: -40px !important;
+}
+
+.bulletstar {
+    padding-right: 30px !important;
+    margin-left: -65px !important;
+}
+
+.blueplain {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 80px;
+    color: #00425B;
+}
+.projectjourney {
+    font-size: 101px;
+    text-align: center;
+    color: #00425B;
+    padding: 100px;
+}
+
+.projects {
+    content: center;
+}
+
+.toolkitgrid {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projectsmobile {
+    display: none;
+}
+
+/* Media Query */
+@media (max-width:900px) {
+    #hero {
+        font-size: 4em;
+    }
+    h1 {
+        font-size: 2.25em;
+    }
+    #skills {
+        font-size: 6em;
+    }
+    #tool-kit {
+        font-size: 6em;
+    }
+    .flex-skills {
+        flex-direction: column;
+    }
+    .toolkitgrid {
+        grid-auto-flow: row;
+    }
+    .blueplain {
+        font-size: 40px;
+    
+    }
+    .projectjourney {
+        font-size: 6em;
+        padding: 50px;
+    }
+    .heroimg {
+        position: relative;
+        width: 300px;
+        height: 700px;
+        top: 0;
+        left: -30px;
+        z-index: 96;
+        filter: drop-shadow(-3px -1px 9px rgba(0, 66, 91, 0.2));
+        }
+    .projects {
+        display: none;
+    }
+    .projectsmobile {
+        display: block;
+    }
+    .projectsmobile > div {
+        padding: 30px;
+        text-align: center;
+    }
+    .flex-container {
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+    .footerwords {
+        display: none;
+    }
+    .footermorgs {
+        position: relative;
+        top: 70px;
+        left: 110px;
+        transform: rotate(3deg);
+    }
+    body {
+        width: auto;
+        background: linear-gradient(180deg, #00425B 1.04%, rgba(0, 66, 91, 0.83) 50.83%, rgba(0, 66, 91, 0) 60%);
+        background-repeat: no-repeat;
+    }
+    p {
+        max-width: 95%;
+        font-size: 32px;
+        color: #FFFFFF;
+        z-index: 99;
+    }
+    .gradient {
+        position: absolute;
+        width: 600px;
+        height: 400.41px;
+        left: -90px;
+        top: 400px;
+        }
+    }
