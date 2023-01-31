@@ -510,7 +510,7 @@ filter: drop-shadow(-3px -1px 9px rgba(0, 66, 91, 0.2));
     }
     .heroimg {
         position: relative;
-        width: 300px;
+        width: 90%;
         height: 700px;
         top: 0;
         left: -30px;
@@ -548,7 +548,7 @@ filter: drop-shadow(-3px -1px 9px rgba(0, 66, 91, 0.2));
     }
     p {
         max-width: 95%;
-        font-size: 32px;
+        font-size: 26px;
         color: #FFFFFF;
         z-index: 99;
     }
