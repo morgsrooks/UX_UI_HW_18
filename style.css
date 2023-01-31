@@ -28,7 +28,7 @@
     
 body {
     width: auto;
-    height: 3095px;
+
     background: linear-gradient(180deg, #00425B 1.04%, rgba(0, 66, 91, 0.83) 45.83%, rgba(0, 66, 91, 0) 100%);
     background-repeat: no-repeat;
 }
@@ -122,61 +122,37 @@ ul {
   }
 
 /* H1 */
-.h1 {
+h1 {
     font-family: 'Dinosaur Cake DEMO';
     font-style: normal;
     font-weight: 400;
     font-kerning: 1em;
-    font-size: 150%;
-    display: flex;
-    align-items: left;
+    font-size: 3em;
     color: #FFFFFF;
-    height: 2px;
+
 }
 
 /* H2 */
 
 h2 {
-    display: block;
-    margin-block-start: 0.3em;
-    margin-block-end: 0.85em;
     z-index: 3;
-}
-
-.h2 {
-    position: relative;
     font-family: 'Dinosaur Cake DEMO';
     font-style: normal;
     font-weight: 400;
-    font-size: 880%;
-    display: flex;
-    align-items: left;
-    text-align: left;
+    font-size: 14em;
+    line-height: .8em;
     color: #FF71D7;
-    height: 220px;
 }
+
 
 /* H3 */
 
 h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: .25em;
-    margin-block-end: 1em;
-    z-index: 3;
-}
-
-.h3 {
-    position: relative;
     font-family: 'Dinosaur Cake DEMO';
     font-style: normal;
     font-weight: 400;
-    font-size: 1300%;
-    line-height: 209px;
-    display: flex;
-    align-items: left;
+    font-size: 13em;
     color: #FF71D7;
-    height: 150px;
 }
 
 /* H4 */
@@ -205,8 +181,7 @@ p {
     font-weight: 400;
     font-size: 32px;
     color: #FFFFFF;
-    width: 728px;
-    height: 18px;
+    max-width: 728px;
     z-index: 99;
 }
 
@@ -215,11 +190,14 @@ p {
 .hero {
     position: relative;
     width: 90%;
-    height: viewport;
-    left: 7%;
-    top: 7%;
+    margin-top: 200px;
+    margin-left: 100px;
 }
 
+#hero {
+    margin-block-start: .2em;
+    margin-block-end: .2em;
+}
 
 .star1 {
   position: absolute;
@@ -428,3 +406,26 @@ filter: drop-shadow(-3px -1px 9px rgba(0, 66, 91, 0.2));
     background: #00425B;
     padding-bottom: 30px;
 }
+
+#skills {
+    z-index: 3;
+    padding-top: 100px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.flex-skills {
+    @media (min-width: 56.25em){
+      display: flex;  
+
+    }
+  }
+.main-content {
+    flex: 1; 
+    padding: 50px;
+  }
+  
+  .analytical {
+    flex: 1;
+    padding: 50px;
+  }
